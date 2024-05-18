@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = 0ad 
+
+[Action]
+Description = Setting 0ad to launch a certain enviroment
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Exec=0ad -editor/Exec=env SDL_VIDEODRIVER=wayland 0ad -editor' /usr/share/applications/0ad.desktop

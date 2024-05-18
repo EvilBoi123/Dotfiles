@@ -1,0 +1,28 @@
+ window {
+margin: 5px;
+border: 2px solid rgba(0,0,0,1.0);
+background-color: rgba(0,0,0,1.0);
+}
+
+#input {
+margin: 5px;
+border: 2px solid rgba(0,0,0,1.0);
+background-color: rgba(0,0,0,1.0);
+}
+
+#inner-box {
+margin: 5px;
+border: 2px solid rgba(0,0,0,1.0);
+background-color: rgba(0,0,0,1.0);
+}
+
+#outer-box {
+margin: 5px;
+border: 2px solid rgba(0,0,0,1.0);
+background-color: rgba(0,0,0,1.0); 
+}
+
+#entry:selected {
+background-color: rgba(50, 61, 67, 1); 
+}
+

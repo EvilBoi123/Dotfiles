@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = netbeans
+
+[Action]
+Description = Setting Netbeans to launch a certain enviroment
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Exec=netbeans %F/Exec=env _JAVA_AWT_WM_NONREPARENTING=1 netbeans %F/' /usr/share/applications/netbeans.desktop

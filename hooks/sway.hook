@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = sway 
+Target = sway-git 
+
+[Action]
+Description = Setting enviroment for sway 
+When = PostTransaction
+Exec = /usr/bin/sed -i 's/Exec=sway/Exec=env GTK_THEME=Adwaita-dark XDG_CURRENT_DESKTOP=sway XCURSOR_SIZE=32 sway/' /usr/share/wayland-sessions/sway.desktop

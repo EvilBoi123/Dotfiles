@@ -1,0 +1,4 @@
+ACTION=="add", SUBSYSTEM=="backlight", KERNEL=="amdgpu_bl0", GROUP="video", MODE="0664", ATTR{power/control}=="manual" 
+
+
+

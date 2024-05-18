@@ -1,0 +1,11 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = brave-bin
+Target = brave-git 
+
+[Action]
+Description = Edit file entry for Brave Browser 
+When = PostTransaction
+Exec = /usr/bin/sed -i 's|^Exec=brave|Exec=brave --password-store=basic|' /usr/share/applications/brave-browser.desktop 

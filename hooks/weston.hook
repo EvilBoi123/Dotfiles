@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = weston 
+
+[Action]
+Description = Setting removing weston.desktop file 
+When = PostTransaction
+Exec = /usr/bin/rm /usr/share/wayland-sessions/weston.desktop

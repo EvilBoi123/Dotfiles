@@ -1,0 +1,10 @@
+##Charge
+ACTION=="change", KERNEL=="BAT1", SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_STATUS}=="Discharging", RUN+="/usr/bin/sh /home/cancel/.scripts/notification.sh" 
+#ACTION=="change", KERNEL=="BAT1", SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_STATUS}=="Discharging", RUN+="/usr/bin/cpupower frequency-set -g powersave"
+## Discharged
+ACTION=="change", KERNEL=="BAT1", SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_STATUS}=="Not charging", RUN+="/usr/bin/sh /home/cancel/.scripts/notification.sh"
+#ACTION=="change", KERNEL=="BAT1", SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_STATUS}=="Not charging", RUN+="/usr/bin/cpupower frequency-set -g performance"
+
+## Testing
+#SUBSYSTEM=="power_supply", ATTR{statu}=="Discharging", ATTR{capacity}=="[0-9][0-9]", RUN+="/usr/bin/sh /home/cancel/.scripts/notification.sh"
+#KERNEL=="BAT1", SUBSYSTEM=="power_supply", ENV{POWER_SUPPLY_STATUS}=="Not charging", RUN+="/usr/bin/sh /home/cancel/.scripts/notification.sh"

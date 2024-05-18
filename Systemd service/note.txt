@@ -1,0 +1,2 @@
+amdgpu belongs to /lib/systemd/system-sleep (This is for to run a script after suspend)
+Amdgpu belongs to /etc/systemd/system/ (Custom script to run after boot)

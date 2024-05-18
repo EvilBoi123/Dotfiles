@@ -1,0 +1,10 @@
+allow_images=true
+normal_window=false
+show=drun
+drun-display_generic=true
+gtk_dark=true
+location=top 
+term=kitty
+key_expand=Tab
+key_exit=Escape
+matching=multi-contains

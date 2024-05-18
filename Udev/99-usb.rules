@@ -1,0 +1,4 @@
+#ACTION=="add", SUBSYSTEM=="usb", DRIVERS=="usb-storage", RUN+="/usr/bin/sh /home/cancel/.battery/notification.sh"
+
+ACTION=="add", SUBSYSTEM=="usb", DRIVERS=="usb-storage", RUN+="/usr/bin/bash /home/cancel/.scripts/usb-noti.sh"
+ACTION=="remove", SUBSYSTEM=="usb", DRIVERS=="usb-storage", RUN+="/usr/bin/bash /home/cancel/.scripts/usb-noti.sh"

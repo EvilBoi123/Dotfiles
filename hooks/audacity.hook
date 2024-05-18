@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = audacity 
+
+[Action]
+Description = Setting Audacity to launch a certain enviroment
+When = PostTransaction
+Exec =  /usr/bin/sed -i 's|Exec=env UBUNTU_MENUPROXY=0 audacity %F|Exec=env UBUNTU_MENUPROXY=0 WAYLAND_DISPLAY= audacity %F|' /usr/share/applications/audacity.desktop

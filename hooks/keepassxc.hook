@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = keepassxc 
+
+[Action]
+Description = Edit file entry for keepassxc 
+When = PostTransaction
+Exec = /usr/bin/sh -c '/usr/bin/echo -e "Actions=keepassxc-xwayland\n [Desktop Action keepassxc-xwayland]\n Name=Keepassxc-Xwayland\n Exec=/usr/bin/keepassxc -platform xcb" | tee -a /usr/share/applications/org.keepassxc.KeePassXC.desktop'

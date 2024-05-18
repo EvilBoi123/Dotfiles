@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = ranger 
+
+[Action]
+Description = Setting ranger to launch in a kitty terminal
+When = PostTransaction
+Exec = /usr/bin/cp /etc/pacman.d/hooks/ranger.desktop /usr/share/applications/

@@ -1,0 +1,9 @@
+[Unit]
+Description=test
+
+[Timer]
+OnCalendar=*-*-* 06..18:*:*
+Unit=fancontrol.service
+
+[Install]
+WantedBy=timers.target

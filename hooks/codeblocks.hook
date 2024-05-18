@@ -1,0 +1,10 @@
+[Trigger]
+Operation = Upgrade
+Operation = Install
+Type = Package
+Target = codeblocks 
+
+[Action]
+Description = Setting Codeblocks to launch a certain enviroment
+When = PostTransaction
+Exec = /usr/bin/sed -i 's|Exec=codeblocks %F|Exec=env GTK_THEME=Adwaita codeblocks %F|' /usr/share/applications/codeblocks.desktop 

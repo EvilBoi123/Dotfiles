@@ -1,0 +1,11 @@
+[Unit]
+Description=Powertop tunings
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/powertop --auto-tune
+ExecStartPost=/usr/bin/bash -c 'for i in $(grep -iERl "Mouse|KB|Keyboard" /sys/bus/usb/devices/*/product | sed "s/product/power\/control/"); do echo on | tee $i; done || true'
+
+[Install]
+WantedBy=multi-user.target
