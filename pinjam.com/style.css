@@ -1,0 +1,160 @@
+ body{   
+    background: #eee;  
+    background-image: url('images/background.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    background-attachment: fixed;
+}
+
+#logo {
+    position: absolute; 
+    left: 10px; 
+    top: 10px; 
+}
+
+input[type="text"] {
+    border: 1px solid #ccc; /* Default border color */
+    padding: 10px;
+    transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+input[type="text"]:focus {
+    border-color: blue; /* Border color when input is focused */
+}
+input[type="password"] {
+    border: 1px solid #ccc; /* Default border color */
+    padding: 10px;
+    transition: border-color 0.3s; /* Smooth transition for border color change */
+}
+
+input[type="password"]:focus {
+    border-color: blue; /* Border color when input is focused */
+}
+
+#id, #pass {
+    width: 200px; 
+    box-sizing: border-box; 
+    margin-left: 10px;
+}
+
+
+
+/* #container {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+} */
+
+#frm {
+    width: 30%; /* Adjust width as needed */
+    border-radius: 30px;
+    border-color: white;
+    margin: auto; /* Center horizontally */
+    background: transparent;
+    backdrop-filter: blur(50px);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+    bottom: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#frm label {
+    width: 150px; /* Fixed width for labels */
+    text-align: right; /* Align labels to the right */
+    margin-right: 10px; /* Add some space between label and input */
+}
+
+#frm p {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: row;
+}
+ 
+#frm input[type="text"],
+#frm input[type="password"] {
+    flex: 1 1 60%; /* Grow, shrink, basis */
+    padding: 8px;
+    box-sizing: border-box;
+    margin-right:40px; /* Add some space between input and submit button */
+} 
+
+#btn, #register {
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px;
+    margin-left: 40px;
+}  
+
+/* home.php */
+
+.logout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+}
+.logout-button:hover {
+    background-color: darkblue;
+}
+
+.request-noaccount-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; 
+    right: 20px; 
+}
+.request-noaccount-button:hover {
+    background-color: darkred;
+}
+
+ .container {
+            display: inline-block; /* Display as inline block to allow positioning */
+        }
+
+#requestbutton {
+    position: inline-block;
+    vertical-align: bottom;
+    margin-left: 80%;
+}
+
+
+/* admin and home php */ 
+.row1{
+    overflow-y: auto;
+    margin: 0 auto; 
+    width: 50%;
+
+}
+tr:nth-child(odd){
+    background-color: rgba(254, 254, 254, 0.7);
+}
+
+tr:nth-child(even){
+    background-color: rgba(80, 173, 255, 0.453);
+}
+
+/*        .center-table {
+            margin: 0 auto; 
+            width: 50%; 
+        } */
