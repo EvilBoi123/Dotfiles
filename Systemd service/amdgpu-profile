@@ -1,6 +1,1 @@
-#!/bin/sh
-
-case $1 in
-    pre)  ;;
-    post) systemctl restart amdgpu-profile.service ;;
-esac
+/usr/lib/systemd/system-sleep/amdgpu-profile
