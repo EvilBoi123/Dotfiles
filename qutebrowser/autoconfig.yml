@@ -7,13 +7,16 @@
 config_version: 2
 settings:
   colors.webpage.bg:
-    global: black
+    global: white
   colors.webpage.darkmode.enabled:
-    global: true
+    global: false
   colors.webpage.preferred_color_scheme:
     global: dark
   content.blocking.method:
     global: both
+  content.blocking.whitelist:
+    global:
+    - '*://youtube.com/*'
   url.default_page:
     global: https://search.brave.com/
   url.searchengines:
