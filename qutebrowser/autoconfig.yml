@@ -6,22 +6,23 @@
 
 config_version: 2
 settings:
-  colors.webpage.bg:
-    global: white
   colors.webpage.darkmode.enabled:
-    global: false
+    qute://*: true
   colors.webpage.preferred_color_scheme:
     global: dark
+  content.autoplay:
+    global: true
+  content.blocking.enabled:
+    '*://www.youtube.com/*': false
   content.blocking.method:
     global: both
-  content.blocking.whitelist:
-    global:
-    - '*://youtube.com/*'
-  url.default_page:
-    global: https://search.brave.com/
+  content.pdfjs:
+    global: true
+  scrolling.smooth:
+    global: false
   url.searchengines:
     global:
-      '!d': https://duckduckgo.com/?q={}
+      '!d': https://duckduckgo.com/?ia=web&q={}
       DEFAULT: https://search.brave.com/search?q={}
   url.start_pages:
-    global: https://search.brave.com/
+    global: https://search.brave.com
