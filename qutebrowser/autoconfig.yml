@@ -6,6 +6,12 @@
 
 config_version: 2
 settings:
+  backend:
+    global: webengine
+  bindings.commands:
+    global:
+      normal:
+        xp: cmd-set-text -s :open -p
   colors.webpage.darkmode.enabled:
     qute://*: true
   colors.webpage.preferred_color_scheme:
@@ -16,10 +22,15 @@ settings:
     '*://www.youtube.com/*': false
   content.blocking.method:
     global: both
+  content.notifications.enabled:
+    '*://www.reddit.com/*': true
+    '*://www.youtube.com/*': true
   content.pdfjs:
     global: true
   scrolling.smooth:
     global: false
+  url.default_page:
+    global: https://search.brave.com
   url.searchengines:
     global:
       '!d': https://duckduckgo.com/?ia=web&q={}
