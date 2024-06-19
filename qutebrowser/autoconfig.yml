@@ -25,6 +25,7 @@ settings:
   content.notifications.enabled:
     '*://www.reddit.com/*': true
     '*://www.youtube.com/*': true
+    https://www.hoyolab.com: true
   content.pdfjs:
     global: true
   scrolling.smooth:
