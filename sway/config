@@ -23,7 +23,7 @@ set $menu wofi -i --show drun | xargs swaymsg exec --
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output "*" bg /home/cancel/Wallpaper/ayaka.png fill
+output "*" bg /home/cancel/Wallpaper/'Paul Dune.jpg' fill
 output HDMI-A-1 position 0 0 
 output eDP-1 position 1920 0
 #

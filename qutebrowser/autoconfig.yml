@@ -17,6 +17,9 @@ settings:
     qute://*: true
   colors.webpage.preferred_color_scheme:
     global: dark
+  confirm_quit:
+    global:
+    - downloads
   content.autoplay:
     global: true
   content.blocking.enabled:
@@ -35,6 +38,8 @@ settings:
     https://www.hoyolab.com: true
   content.pdfjs:
     global: true
+  content.proxy:
+    global: system
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
   scrolling.smooth:
