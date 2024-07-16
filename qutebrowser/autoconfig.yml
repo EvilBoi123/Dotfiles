@@ -44,6 +44,12 @@ settings:
     global: system
   content.register_protocol_handler:
     https://mail.google.com?extsrc=mailto&url=%25s: true
+  downloads.location.directory:
+    global: ~/
+  qt.chromium.experimental_web_platform_features:
+    global: auto
+  qt.highdpi:
+    global: true
   qt.workarounds.disable_accelerated_2d_canvas:
     global: auto
   scrolling.smooth:
