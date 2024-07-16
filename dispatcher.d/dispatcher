@@ -1,7 +1,7 @@
 #!/bin/sh
 
 interface=$1 status=$2
-if [ "$CONNECTION_ID" = "Wired connection 1" ]; then
+if [ "$CONNECTION_ID" = "Wired connection 1" ] || [ "$CONNECTION_ID" = "OPPO A54" ]; then
   case $status in
     up)
 	    systemctl start doh-client
