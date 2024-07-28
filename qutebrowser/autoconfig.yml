@@ -35,6 +35,7 @@ settings:
   content.notifications.enabled:
     '*://www.reddit.com/*': true
     '*://www.youtube.com/*': true
+    https://mail.google.com: true
     https://web.telegram.org: true
     https://web.whatsapp.com: true
     https://www.hoyolab.com: true
@@ -55,7 +56,7 @@ settings:
   scrolling.smooth:
     global: false
   url.default_page:
-    global: https://search.brave.com
+    global: https://start.duckduckgo.com/
   url.searchengines:
     global:
       '!d': https://duckduckgo.com/?ia=web&q={}
